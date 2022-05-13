@@ -45,7 +45,6 @@ public class Xe {
         this.tenxe = s.tenxe;
         this.mauxe = s.mauxe;
         this.dangchay = s.dangchay;
-        this.maloaixe = s.maloaixe;
     }
     public String getBienso() {
         return bienso;
@@ -83,9 +82,6 @@ public class Xe {
         return maloaixe;
     }
 
-    public void setMaloaixe(LoaiXe maloaixe) {
-        this.maloaixe = maloaixe;
-    }
 
     public int getManvgh() {
         return manvgh;
