@@ -1,10 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.Entity.BuuCuc;
-import com.example.demo.Entity.DonGiaoHang;
-import com.example.demo.Entity.TaiKhoan;
 import com.example.demo.respository.BuuCucRepository;
-import com.example.demo.respository.DonhangRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

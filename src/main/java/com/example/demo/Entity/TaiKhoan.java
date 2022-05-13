@@ -26,7 +26,6 @@ public class TaiKhoan {
     public TaiKhoan(String tenDangNhap, String matKhau, Quyen quyen) {
         this.tenDangNhap = tenDangNhap;
         this.matKhau = matKhau;
-        this.quyen = quyen;
     }
 
     public TaiKhoan() {
@@ -35,6 +34,5 @@ public class TaiKhoan {
     public TaiKhoan(TaiKhoan x) {
         this.tenDangNhap = x.getTenDangNhap();
         this.matKhau = x.getMatKhau();
-        this.quyen = x.getQuyen();
     }
 }

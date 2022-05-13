@@ -75,17 +75,11 @@ public class ChiTietVanChuyen {
         return diemdi;
     }
 
-    public void setDiemdi(BuuCuc diemdi) {
-        this.diemdi = diemdi;
-    }
 
     public BuuCuc getDiemden() {
         return diemden;
     }
 
-    public void setDiemden(BuuCuc diemden) {
-        this.diemden = diemden;
-    }
 
     public void setDonGiaoHang(int donGiaoHang) {
         this.donGiaoHang = donGiaoHang;
@@ -107,9 +101,7 @@ public class ChiTietVanChuyen {
         return matrangthai;
     }
 
-    public void setMatrangthai(TrangThai matrangthai) {
-        this.matrangthai = matrangthai;
-    }
+
 
 
 }

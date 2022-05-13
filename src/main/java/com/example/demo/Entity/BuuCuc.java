@@ -2,10 +2,7 @@ package com.example.demo.Entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
 import javax.persistence.*;
-import javax.persistence.Table;
-import java.util.Collection;
 
 @Entity
 @Table(name = "BUUCUC")
@@ -80,3 +77,4 @@ public class BuuCuc {
         return true;
     }
 }
+

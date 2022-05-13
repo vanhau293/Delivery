@@ -25,10 +25,8 @@ public class Gia {
     public Gia() {
     }
 
-    public Gia(int magia, LoaiGiaoHang loaiGiaoHang, NhomCanNang nhomCanNang, int giagh) {
+    public Gia(int magia, int giagh) {
         this.magia = magia;
-        this.loaiGiaoHang = loaiGiaoHang;
-        this.nhomCanNang = nhomCanNang;
         this.giagh = giagh;
     }
 
@@ -52,13 +50,6 @@ public class Gia {
         this.magia = magia;
     }
 
-    public void setLoaiGiaoHang(LoaiGiaoHang loaiGiaoHang) {
-        this.loaiGiaoHang = loaiGiaoHang;
-    }
-
-    public void setNhomCanNang(NhomCanNang nhomCanNang) {
-        this.nhomCanNang = nhomCanNang;
-    }
 
     public void setGiagh(int giagh) {
         this.giagh = giagh;

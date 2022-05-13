@@ -3,7 +3,6 @@ package com.example.demo.Entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 @Entity
 @Table(name = "NHOMCANNANG")

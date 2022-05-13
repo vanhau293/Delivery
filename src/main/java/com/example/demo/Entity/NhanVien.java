@@ -75,7 +75,6 @@ public class NhanVien {
         this.camchay = s.camchay;
         this.gplx = s.gplx;
         this.hinhanhtaixe = s.hinhanhtaixe;
-        this.mabuucuc = s.mabuucuc;
     }
     public Integer getManv() {
         return manv;
@@ -169,25 +168,15 @@ public class NhanVien {
         return mabuucuc;
     }
 
-    public void setMabuucuc(BuuCuc mabuucuc) {
-        this.mabuucuc = mabuucuc;
-    }
 
     public LoaiNhanVien getLoainv() {
         return loainv;
-    }
-
-    public void setLoainv(LoaiNhanVien loainv) {
-        this.loainv = loainv;
     }
 
     public TaiKhoan getTendangnhap() {
         return tendangnhap;
     }
 
-    public void setTendangnhap(TaiKhoan tendangnhap) {
-        this.tendangnhap = tendangnhap;
-    }
 
     @Override
     public int hashCode() {

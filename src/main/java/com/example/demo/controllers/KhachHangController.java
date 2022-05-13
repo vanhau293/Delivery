@@ -1,10 +1,8 @@
 package com.example.demo.controllers;
 
 import com.example.demo.Entity.KhachHang;
-import com.example.demo.Entity.TaiKhoan;
 import com.example.demo.exception.NotFoundException;
 import com.example.demo.respository.KhachHangRepository;
-import com.example.demo.respository.TaiKhoanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

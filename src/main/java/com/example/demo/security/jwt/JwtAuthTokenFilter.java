@@ -1,7 +1,6 @@
 package com.example.demo.security.jwt;
 
 
-
 import com.example.demo.security.services.UserDetailsServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +17,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
 
 @Component
 public class JwtAuthTokenFilter extends OncePerRequestFilter {

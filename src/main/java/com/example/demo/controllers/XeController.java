@@ -1,7 +1,6 @@
 package com.example.demo.controllers;
 
 import com.example.demo.Entity.LoaiXe;
-import com.example.demo.Entity.NhanVien;
 import com.example.demo.Entity.Xe;
 import com.example.demo.exception.NotFoundException;
 import com.example.demo.respository.LoaiXeRepository;

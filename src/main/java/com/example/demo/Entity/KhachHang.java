@@ -103,9 +103,6 @@ public class KhachHang {
         return tendangnhap;
     }
 
-    public void setTendangnhap(TaiKhoan tendangnhap) {
-        this.tendangnhap = tendangnhap;
-    }
 
     @Override
     public int hashCode() {

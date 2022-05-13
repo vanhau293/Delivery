@@ -1,27 +1,21 @@
 package com.example.demo.controllers;
 
 import com.example.demo.Entity.LoaiNhanVien;
-import com.example.demo.Entity.NhanVien;
 import com.example.demo.Entity.Quyen;
 import com.example.demo.Entity.TaiKhoan;
 import com.example.demo.exception.NotFoundException;
-import com.example.demo.model.dto.TaiKhoanDTO;
 import com.example.demo.request.DangNhapRequest;
 import com.example.demo.respository.*;
-import com.example.demo.service.TaiKhoanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping(value = "/taikhoan")
 public class TaiKhoanController {
-    @Autowired
-    private TaiKhoanService taiKhoanService;
 
     @Autowired
     private TaiKhoanRepository taiKhoanRepository;
@@ -32,11 +26,7 @@ public class TaiKhoanController {
     @Autowired
     private LoaiNhanVienRepository loaiNhanVienRepository;
 
-    @GetMapping("")
-    public ResponseEntity<?> getListTaiKhoan(){
-        List<TaiKhoan> list = taiKhoanRepository.findAll();
-        return  ResponseEntity.ok(taiKhoanService.getListTK());
-    }
+
     @GetMapping("/{tenDN}")
     public ResponseEntity<?> getTaiKhoan(@PathVariable String tenDN){
         List<TaiKhoan> list = taiKhoanRepository.findAll();

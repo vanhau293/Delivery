@@ -3,7 +3,6 @@ package com.example.demo.Entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 @Entity
 @Table(name = "PHUONGTHUCTHANHTOAN")
@@ -66,3 +65,4 @@ public class PhuongThucThanhToan {
         return "HIHI.PhuongThucThanhToan[ mapt=" + mapt + " ]";
     }
 }
+

@@ -1,11 +1,9 @@
 package com.example.demo.Entity;
 
+
 import lombok.Data;
 
-import javax.persistence.Entity;
 import javax.persistence.*;
-import javax.persistence.Table;
-import java.util.Collection;
 
 @Entity
 @Table(name = "LOAINHANVIEN")
@@ -61,3 +59,4 @@ public class LoaiNhanVien {
         return true;
     }
 }
+

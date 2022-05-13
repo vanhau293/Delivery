@@ -200,9 +200,6 @@ public class DonGiaoHang {
         return magh;
     }
 
-    public void setMagh(GoiHang magh) {
-        this.magh = magh;
-    }
 
     public int getMakh() {
         return makh;
@@ -216,9 +213,6 @@ public class DonGiaoHang {
         return mapt;
     }
 
-    public void setMapt(PhuongThucThanhToan mapt) {
-        this.mapt = mapt;
-    }
 
     @Override
     public int hashCode() {

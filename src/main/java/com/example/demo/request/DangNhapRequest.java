@@ -1,8 +1,10 @@
 package com.example.demo.request;
+
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
+
 @Getter
 @Setter
 public class DangNhapRequest {
@@ -17,3 +19,4 @@ public class DangNhapRequest {
         this.password = password;
     }
 }
+
