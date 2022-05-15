@@ -20,7 +20,7 @@ public class BuuCucController {
         return  ResponseEntity.ok(list);
     }
     @PostMapping("")
-    public BuuCuc addProduct(@Valid @RequestBody BuuCuc bc) {
+    public BuuCuc themBuuCuc(@Valid @RequestBody BuuCuc bc) {
 
         return buuCucRepository.save(bc);
     }

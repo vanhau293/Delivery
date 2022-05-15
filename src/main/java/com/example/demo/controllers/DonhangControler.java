@@ -5,6 +5,7 @@ import com.example.demo.Entity.PhuongThucThanhToan;
 import com.example.demo.Entity.TrangThai;
 import com.example.demo.exception.NotFoundException;
 import com.example.demo.respository.DonhangRepository;
+import com.example.demo.respository.GoiHangRepository;
 import com.example.demo.respository.PhuongThucTTRepository;
 import com.example.demo.respository.TrangThaiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ import java.util.List;
 public class DonhangControler {
     @Autowired
     private DonhangRepository donHangRepository;
+    @Autowired
+    private GoiHangRepository goiHangRepository;
     @Autowired
     private TrangThaiRepository trangThaiRepository;
 
