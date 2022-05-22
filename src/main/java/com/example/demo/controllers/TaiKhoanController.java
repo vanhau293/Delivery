@@ -48,6 +48,12 @@ public class TaiKhoanController {
         List<LoaiNhanVien> list = loaiNhanVienRepository.findAll();
         return  ResponseEntity.ok(list);
     }
+    @GetMapping("")
+    public ResponseEntity<?> listTK() {
+        List<TaiKhoan> list = taiKhoanRepository.findAll();
+
+        return ResponseEntity.ok(list);
+    }
     @PostMapping("")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody TaiKhoan tenDN) {
         List<TaiKhoan> list = taiKhoanRepository.findAll();
