@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.Entity.DonGiaoHang;
+import com.example.demo.Entity.GoiHang;
 import com.example.demo.Entity.PhuongThucThanhToan;
 import com.example.demo.Entity.TrangThai;
 import com.example.demo.exception.NotFoundException;
@@ -62,6 +63,8 @@ public class DonhangControler {
     public DonGiaoHang themDonHang(@RequestBody DonGiaoHang dgh){
         return donHangRepository.save(dgh);
     }
+    @PostMapping("themgh")
+    public GoiHang themGoiHang(@RequestBody GoiHang gh){ return goiHangRepository.save(gh);}
     @PutMapping("/{madh}")
     public DonGiaoHang suaDonHang(@RequestBody DonGiaoHang dgh, @PathVariable int madh){
         DonGiaoHang s = donHangRepository.findById(madh).orElseThrow(() -> new NotFoundException("Không tồn tại đơn hàng "+ madh));
