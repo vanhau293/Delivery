@@ -17,6 +17,7 @@ public class BuuCucController {
     @GetMapping("")
     public ResponseEntity<?> getListBuuCuc(){
         List<BuuCuc> list = buuCucRepository.findAll();
+        System.out.prinln("hihi");
         return  ResponseEntity.ok(list);
     }
     @PostMapping("")
